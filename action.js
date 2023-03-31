@@ -3,35 +3,16 @@ const loginSucces=document.getElementById('loginsucces')
 const resultName=document.getElementById('resultName')
 const resultEmail=document.getElementById('resultEmail')
 const resultPass=document.getElementById('resultPass')
-resultName.style.color='red'
-formLogin.addEventListener('submit', function(event){
+
+resultName.addEventListener('keyup', function(event){
   event.preventDefault()
   const name =event.target.inputName.value
-  const email =event.target.inputEmail.value
-  const pass =event.target.inputPass.value
-  if(name === "hendri" && email ==='hendri@gmail.com' && pass ==='1234'){
-  window.location="./index.html"
-  console.log(name)
+  
+  if(name === ""){
+
   }
-  else{
-    if (name !== "hendri" || name === ''){
-       resultName.innerText="name wrong, try again"
-     } else if (email !== "hendri@gmail.com" || email ===''){
-        resultEmail.innerText="email wrong, try again"
 
-     } else if( pass !=="1234" || pass === ''){
-      resultPass.innerText="pass wrong, try again"
-          }
-          else {
-            resultName.innerText=''
-            resultEmail.innerText=''
-            resultPass.innerText=''
-          }
-       }
-       
 })
-
-
 
 
 // show hide toggle index
