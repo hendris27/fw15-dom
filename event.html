@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./asset/css/style-payment.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Event</title>
+</head>
+
+<body>
+  <div class="container1">
+    <header class="header p-[50px]">
+      <a href="index.html">
+        <div class="logo">
+          <img src="./asset/png/nav-logo.png" alt="nav-logo" />
+        </div>
+      </a>
+      <div class="logo">
+        <nav class="nav-menu">
+          <ul>
+            <li class="list-menu"><a href="index.html" style="text-decoration: none;">Home</a></li></a> </li>
+            <li class="list-menu"><a href="see-create-event.html">Create Event</a></li>
+            <li class="list-menu">Location</li>
+          </ul>
+        </nav>
+      </div>
+
+      <a href="Profile.html">
+        <div class="profil">
+          <div class="logo-avatar">
+            <img src="./asset/png/p-zoro.png" alt="avatar" />
+          </div>
+          <div class="username">
+            Roronoa Zoro
+          </div>
+        </div>
+      </a>
+      <div onclick="showToggle()" class="tab">
+        <div>
+          <img src="./asset/svg/tab-mobile.svg" alt="tab-mobile">
+        </div>
+      </div>
+    </header>
+    <!-- this toggle dekstop >>> -->
+    <div id="show-menu" class="hidden flex flex-col bg-[#f1f1f1] mt-[100px] mr-[0px] w-full py-[50px]">
+      <div>
+        <nav>
+          <ul class="text-center flex-col flex gap-3">
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="index.html" style="text-decoration: none;">Home </a>
+            </li></a> </li>
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="see-create-event.html">Create Event</a>
+            </li>
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="#">Location</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex flex-col gap-4 justify-center items-center text-sm mt-4">
+
+        <div class="flex flex-row gap-2 justify-center items-center">
+          <div
+            class="text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+            <a href="Profile.html">Profil</a>
+          </div>
+          <div>
+            <img src="./asset/svg/arrrow-down.svg" alt="arrrow-down">
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <button class="bg-red-500 w-full px-[20px] py-[10px] rounded-xl">Sign Out</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- this toggle dekstop <<< -->
+    <main>
+      <main
+        class="mt-16 bg-white md:mt-[130px] h- full w-full md:h-[85%] rounded-2xl overflow-hidden flex p-[50px] md:w-[75%] ">
+        <div class="flex flex-col lg:flex-row content-center md:w-full gap-9 px-[50px] py-[50px]">
+          <!-- left    -->
+          <div class=" flex flex-col flex-1 w-full items-center">
+            <div class=" bg-gray-300s w-full lg:w-[311px] lg:h-[342px]  rounded-[40px] overflow-hidden bg-gray-300">
+              <img class="w-full h-full object-cover" src="./asset/png/baner1.png" alt="baner-event">
+            </div>
+            <div class="flex mt-12 gap-4">
+              <a href="#">
+                <div>
+                  <img src="./asset/svg/heart-white.svg" alt="icon-heart">
+                </div>
+              </a>
+              <a href="#">
+                <div class="mt-1 font-bold text-xl">Add to Wishlist</div>
+              </a>
+            </div>
+          </div>
+          <!-- right -->
+          <div class=" flex flex-col flex-1 w-full">
+            <div>
+              <div class="w-[50%] text-black font-bold tracking-[2px] leading-[36px] text-[24px]">
+                Sights & Sounds Exhibition
+              </div>
+              <div class="flex justify-between mt-[30px] ">
+                <div class="flex gap-3.5">
+                  <div>
+                    <img src="./asset/svg/location.svg" alt="icon-location">
+                  </div>
+                  <div class="font-medium">Jakarta, Indonesia</div>
+                </div>
+                <div class="flex gap-3.5">
+                  <div>
+                    <img src="./asset/svg/time.svg" alt="icon-time">
+                  </div>
+                  <div class="font-medium">Wed, 15 Nov, 4:00 PM</div>
+                </div>
+              </div>
+
+              <!-- attended -->
+              <div class="flex flex-col gap-3 mt-8">
+                <div>Attendees</div>
+                <div class="title-baner-1">
+                  <div class="profile-guest-1">
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 border border-b-1 w-full border-[rgba(193, 197, 208, 0.25)]"></div>
+                <!-- attended -->
+              </div>
+              <div class="flex flex-col mt-6">
+                <div class="text-xl font-bold">
+                  Event Detail
+                </div>
+                <div class="mt-4 leading-[20px] tracking-[1] w-full font-normal text-xs text-[#373A42
+                      75%]">
+                  After his controversial art exhibition "Tear and Consume" back in November 2018, in which guests were
+                  invited to tear up…
+                </div>
+                <div class="mt-2.5 text-[#3366FF] leading-[20px] tracking-[0.5] text-xs ">Read More</div>
+                <div class="mt-6 font-semibold text-xl leading-[30px] tracking-[1]">Location</div>
+              </div>
+              <div class="flex flex-col gap-12 mt-4">
+                <div class="w-[315px] h-[151px] rounded-[20px] overflow-hidden">
+                  <img class="object-cover h-full w-full" src="./asset/png/map.png" alt="">
+                </div>
+                <div>
+                  <a href="booking.html"> <button class="text[#ffff] bg-[#9ED5C5] h-[55px] w-[315px] rounded-2xl">Buy
+                      Tickets</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+    </main>
+    <footer class="flex flex-col pl-12 md:bg-[#F1F1F1] items-center">
+      <div class="w-[80%] py-[50px]">
+        <div class="section-top flex flex-col md:flex-row gap-[10px] justify-between">
+          <div class="flex flex-col gap-4 md:gap-[0px]">
+            <div>
+              <img src="./asset/png/nav-logo.png" alt="logo" />
+            </div>
+            <div>Find events you love with our</div>
+            <div class="flex md:gap-[10px] gap-4">
+              <div>
+                <img src="./asset/png/facebook.png" alt="icon-facebook" />
+              </div>
+              <div>
+                <img src="./asset/png/whatsapp.png" alt="icon-whatsapp" />
+              </div>
+              <div>
+                <img src="./asset/png/ig.png" alt="icon-instagram" />
+              </div>
+              <div>
+                <img src="./asset/png/twitter.png" alt="icon twitter" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Weatik
+            </div>
+
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              About Us
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Features
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Blog
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Payments
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Mobile App
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Features
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Booking
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Create Event
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Discover
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Register
+            </div>
+            <div></div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Company
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Partnership
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Help
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Terms of Service
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Privacy Policy
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Sitemap
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-start mt-10">
+          <div class="copyright">© 2020 Wetick All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./action.js"></script>
+</body>
+
+</html>

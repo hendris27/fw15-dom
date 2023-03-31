@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/css/style-Profil.css" />
+  <title>My-listwish</title>
+</head>
+
+<body>
+  <div class="flex flex-col bg-[#3EFE0] h-screen">
+    <header class="p-[50px] h-[90px] w-full flex items-center justify-between md:bg-[#0E8388] fixed">
+      <a href="index.html">
+        <div class="logo">
+          <img src="./asset/png/nav-logo.png" alt="nav-logo" />
+        </div>
+      </a>
+      <div class="logo">
+        <nav class="flex flex-row hidden md:block">
+          <ul>
+            <li
+              class="inline-block m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#f1f1f1] hover:border-b-2- hover:border-white">
+              <a href="index.html" style="text-decoration: none">Home</a>
+            </li>
+            <li
+              class="inline-block m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#f1f1f1] hover:border-b-2- hover:border-white">
+              <a href="see-create-event.html">Create Event</a>
+            </li>
+            <li
+              class="inline-block m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#f1f1f1] hover:border-b-2- hover:border-white">
+              <a href="#"> Location</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <a href="Profile.html">
+        <div class="hidden md:block flex md:flex">
+          <div class="">
+            <img src="./asset/png/p-zoro.png" alt="avatar" />
+          </div>
+          <div class="username">Roronoa Zoro</div>
+        </div>
+      </a>
+
+      <div onclick="showToggle()" class="md:hidden ">
+        <div>
+          <img src="./asset/svg/tab-mobile.svg" alt="tab-mobile" />
+        </div>
+      </div>
+    </header>
+    <!-- this toggle dekstop >>> -->
+    <div id="show-menu" class="hidden flex flex-col bg-[#f1f1f1] mt-[100px] mr-[0px] w-full py-[50px]">
+      <div>
+        <nav>
+          <ul class="text-center flex-col flex gap-3">
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="index.html" style="text-decoration: none;">Home </a>
+            </li></a> </li>
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="see-create-event.html">Create Event</a>
+            </li>
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="#">Location</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex flex-col gap-4 justify-center items-center text-sm mt-4">
+
+        <div class="flex flex-row gap-2 justify-center items-center">
+          <div
+            class="text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+            <a href="Profile.html">Profil</a>
+          </div>
+          <div>
+            <img src="./asset/svg/arrrow-down.svg" alt="arrrow-down">
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <button class="bg-red-500 w-full px-[20px] py-[10px] rounded-xl">Sign Out</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- this toggle dekstop <<< -->
+    <main class="flex flex-row md:bg-[#F1F1F1] justify-between gap-20 pb-[50px] w-full pt-[150px] pr-10">
+      <aside class="hidden md:block md:w-[35%] md:pr-5">
+        <a href="Profile.html">
+          <div class="flex pl-16 gap-4 mb-14">
+            <div>
+              <img src="./asset/png/p-zoro.png" alt="avatar-profil">
+            </div>
+            <div> Roronoa Zoro
+              </br> <label>Sword Warrior, East Blue</label>
+            </div>
+
+          </div>
+        </a>
+        <div class="flex pl-16 gap-4 mt-10">
+          <div>
+            <img src="./asset/png/s-profil.png" alt="icon-profil">
+            <a href="Profile.html"></a>
+          </div>
+          <div><a href="Profile.html">Profil</a></div>
+        </div>
+        <div class="flex pl-[100px] gap-4 mt-10">
+          <div>
+            <img src="./asset/png/s-card.png" alt="icon-card">
+          </div>
+          <div>Card</div>
+        </div>
+        <a href="Profile.html">
+          <div class="flex pl-[100px] gap-4 mt-10">
+            <div>
+              <img src="./asset/png/s-edit-filled.png" alt="icon-edit-fill">
+            </div>
+            <div>Edit profile</div>
+          </div>
+        </a>
+        <div class="flex pl-[100px] gap-4 mt-10">
+          <a href="change-password.html">
+            <div>
+              <img src="./asset/png/s-open-lock.png" alt="icon-change-password">
+            </div>
+          </a>
+          <a href="change-password.html">
+            <div class="text-[#098e8a]">Change Password</div>
+          </a>
+        </div>
+
+        <div class="flex pl-16 gap-4 mt-10">
+          <a href="create-event.html">
+            <div>
+              <img src="./asset/png/s-create-event.png" alt="icon-task-list">
+            </div>
+          </a>
+          <a href="create-event.html">
+            <div class="hover:text-[blue] ">Create Event</div>
+          </a>
+        </div>
+
+        <div class="flex pl-16 gap-4 mt-10">
+          <a href="see-my-booking.html">
+            <div>
+              <img src="./asset/png/s-task-list-.png" alt="icon-task-list">
+            </div>
+          </a>
+          <a href="see-my-booking.html">
+            <div>My Booking</div>
+          </a>
+        </div>
+        <div class="flex pl-16 gap-4 mt-10">
+          <a href="see-my-wishlist.html">
+            <div>
+              <img src="./asset/png/s-like.png" alt="icon-wishlist">
+            </div>
+          </a>
+          <a href="see-my-wishlist.html">
+            <div>My Listwish</div>
+          </a>
+        </div>
+        <div class="flex pl-16 gap-4 mt-10">
+          <div>
+            <img src="./asset/png/s-settings.png" alt="icon-setting">
+          </div>
+          <div>setting</div>
+        </div>
+        <div class="flex pl-16 gap-4 mt-10">
+          <div>
+            <img src="./asset/png/s-logout.png" alt="icon-logout">
+          </div>
+          <div>Logout</div>
+        </div>
+
+      </aside>
+      <div
+        class=" h-[70%] md:h-screen bg-white w-full rounded-2xl md:flex flex-col gap-8 md:item-center md:w-[100%] self-start ml-30px p-[30px] ml-12">
+        <div class="w-full flex flex-col md:flex-row md:justify-between">
+          <div class="mt-8  text-xl font-bold">My ListWish</div>
+
+        </div>
+
+        <div class="flex flex-col flex justify-between gap-4] justify-center item-center py-[50px]">
+          <div class="text-[373A42] text-2xl font-bold text-center">No tickets bought</div>
+          <div class=" w-full text-center"> It appears you havent bought any tickets </div>
+          <div class=" w-full text-center"> yet. Maybe try searching
+            these? </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </main>
+
+
+    <footer class="flex flex-col pl-12 md:bg-[#F1F1F1] items-center">
+      <div class="w-[80%] py-[50px]">
+        <div class="section-top flex flex-col md:flex-row gap-[10px] justify-between">
+          <div class="flex flex-col gap-4 md:gap-[0px]">
+            <div>
+              <img src="./asset/png/nav-logo.png" alt="logo" />
+            </div>
+            <div>Find events you love with our</div>
+            <div class="flex md:gap-[10px] gap-4">
+              <div>
+                <img src="./asset/png/facebook.png" alt="icon-facebook" />
+              </div>
+              <div>
+                <img src="./asset/png/whatsapp.png" alt="icon-whatsapp" />
+              </div>
+              <div>
+                <img src="./asset/png/ig.png" alt="icon-instagram" />
+              </div>
+              <div>
+                <img src="./asset/png/twitter.png" alt="icon twitter" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Weatik
+            </div>
+
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              About Us
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Features
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Blog
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Payments
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Mobile App
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Features
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Booking
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Create Event
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Discover
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Register
+            </div>
+            <div></div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Company
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Partnership
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Help
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Terms of Service
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Privacy Policy
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Sitemap
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-start mt-10">
+          <div class="copyright">© 2020 Wetick All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./action.js"></script>
+</body>
+
+</html>

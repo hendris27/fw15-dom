@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./asset/css/style-index.css" />
+  <link rel="stylesheet" href="./asset/css/style-dekstop.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="flex flex-col bg-[#3EFE0] h-screen">
+    <header class="p-[50px] h-[90px] w-full flex items-center md:justify-between  fixed">
+      <a href="index.html">
+        <div>
+          <img src="./asset/png/nav-logo.png" alt="nav-logo" />
+        </div>
+      </a>
+      <div>
+        <nav class="flex md:block hidden">
+          <ul>
+            <li
+              class="inline-block m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="index.html" style="text-decoration: none;">Home </a>
+            </li></a> </li>
+            <li
+              class="inline-block m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="see-create-event.html">Create Event</a>
+            </li>
+            <li
+              class="inline-block m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="#">Location</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="hideden md:block md:flex flex gap-12 justify-center items-center text-sm ">
+        <div class="hidden md:block">
+          <a href="login.html">Log in</a>
+        </div>
+        <div class="signup hidden md:block  ">
+          <a href="signup.html">
+            <button class="btn-signup">Sign up</button>
+          </a>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <div onclick="showToggle()">
+          <img src="./asset/svg/tab-mobile.svg" alt="tab-mobile" />
+        </div>
+      </div>
+    </header>
+    <!-- toggle dekstop start -->
+    <div id="show-menu" class="hidden flex flex-col bg-[#f1f1f1] mt-[100px] mr-[0px] w-full py-[50px]">
+      <div>
+        <nav>
+          <ul class="text-center flex-col flex gap-3">
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="index.html" style="text-decoration: none;">Home </a>
+            </li></a> </li>
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="see-create-event.html">Create Event</a>
+            </li>
+            <li
+              class="m-[10px] text-sm font-sans font-semibold text-black border-b-2 border-transparent cursor-pointer hover:text-[#0E8388] hover:border-b-2- hover:border-white">
+              <a href="#">Location</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex flex-col gap-4 justify-center items-center text-sm mt-4">
+        <a href="login.html">
+          <div class=" hover:bg-gray-500 hover:text-white">Log in</div>
+        </a>
+        <div>
+          <a href="signup.html">
+            <button class="bg-pink-500 w-full px-[20px] py-[10px] rounded-xl">Sign up</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- toggle dekstop end -->
+    <main class="flex justify-center bg-white md:bg-[#F1F1F1] flex-col flex-1">
+      <div
+        class="w-full top-content bg-[#0E8388] w-full p-[50px] flex justify-start items-center justify-end items-center pt-[250px] md:py-[90px] bg-[url('/asset/png/layer.png')] bg-no-repeat bg-cover">
+        <img class="h-full w-full md:h-[100%] md:w-[50%]" src="./asset/png/logo-avatar.png" alt="logo-avatar">
+
+      </div>
+      <div class="flex flex-col items-center justify-center py-[50px]">
+        <div>
+          <div>
+            <button class="bg-yellow-400 rounded-xl px-[20px] ">
+              <div class="flex gap-4 pl-3 tracking-[3px]"><img src="./asset/png/Line .png" alt="line">
+                <div class="text-sm font-semibold">EVENT</div>
+              </div>
+            </button>
+          </div>
+
+        </div>
+        <div class="font-semibold text-4xl mt-5 tracking-[1px]">Events For You</div>
+        <div class="flex gap-10 mt-6">
+          <div
+            class="flex flex-col justify-between items-center gap-[5px] hover:border-[3px] hover:border-yellow-400 rounded-xl p-[5px]">
+            <div>13</div>
+            <div>Mon</div>
+          </div>
+          <div
+            class="flex flex-col justify-between items-center gap-[5px] hover:border-[3px] hover:border-yellow-400 rounded-xl p-[5px]">
+            <div>14</div>
+            <div>Tue</div>
+          </div>
+          <div
+            class="flex flex-col justify-between items-center gap-[5px] hover:border-[3px] hover:border-yellow-400 rounded-xl p-[5px]">
+            <div>15</div>
+            <div>Wed</div>
+          </div>
+          <div
+            class="flex flex-col justify-between items-center gap-[5px] hover:border-[3px] hover:border-yellow-400 rounded-xl p-[5px]">
+            <div>16</div>
+            <div>Thu</div>
+          </div>
+          <div
+            class="flex flex-col justify-between items-center gap-[5px] hover:border-[3px] hover:border-yellow-400 rounded-xl p-[5px]">
+            <div>17</div>
+            <div>Fri</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="main-content3 overflow-scroll flex overflow-hidden bg-white">
+        <div class="flex gap-4 justify-center">
+          <div class="baner">
+            <div class="baner1 bg-[url('/asset/png/baner1.png')]">
+
+
+              <a href="event.html">
+                <div class="title-baner1">
+                  <div class="text1">Wed, 15 Nov, 4:00 PM</div>
+                  <div>Sights & Sounds
+                    Exhibition</div>
+                  <div class="profile-guest">
+                    <div class="guest">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+          <div class="baner">
+            <div class="baner1 bg-[url('/asset/png/baner1.png')]">
+
+
+              <a href="event.html">
+                <div class="title-baner1">
+                  <div class="text1">Wed, 15 Nov, 4:00 PM</div>
+                  <div>Sights & Sounds
+                    Exhibition</div>
+                  <div class="profile-guest">
+                    <div class="guest">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="btn-arrow">
+          <div>
+            <button class="arrow-left"> &larr;</button>
+          </div>
+          <div>
+            <button class="arrow-right"> &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content4 pb-[50px]">
+
+        <div class="hidden md:block self-start">
+          <button class="btn-location">
+            <div class="flex gap-4 pl-2 tracking-[3px]"><img src="./asset/png/Line2.png" alt="line">
+              <div>Location</div>
+            </div>
+          </button>
+        </div>
+
+        <div class="flex-col md:hidden py-[50px] gap-[20px]">
+          <button class="bg-yellow-400 rounded-xl ">
+            <div class="flex gap-4 pl-2 tracking-[3px]"><img src="./asset/png/Line2.png" alt="line">
+              <div>Location</div>
+            </div>
+          </button>
+          <div class="mt-[20px] text-white w-[214px] text-2xl font-bold leading-[34px] tracking-[1px]">Discover Events
+            Near You
+          </div>
+          <div class="flex flex-col gap-[50px]">
+            <div class="mt-[20px] flex flex-col text-center gap-4">
+              <div
+                class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/1jakarta.jpg')] rounded-xl bg-cover">
+              </div>
+              <div class="text-white">Jakarta</div>
+            </div>
+
+            <div class="flex flex-col text-center gap-4">
+              <div
+                class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/3bali.jpg')] rounded-xl bg-auto">
+              </div>
+              <div class="text-white">Bali</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="md:flex gap-12 hidden md:block">
+          <div class="flex-col">
+            <div class="text-white w-[214px] text-4xl font-bold leading-[64px] tracking-[1px]">Discover Events Near You
+            </div>
+          </div>
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/1jakarta.jpg')] rounded-xl bg-cover">
+            </div>
+            <div class="text-white">Jakarta</div>
+          </div>
+
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/2bandung.jpg')] rounded-xl bg-auto">
+            </div>
+            <div class="text-white">Bandung</div>
+          </div>
+
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/3bali.jpg')] rounded-xl bg-auto">
+            </div>
+            <div class="text-white">Bali</div>
+          </div>
+
+
+        </div>
+        <div class="md:flex gap-12 hidden md:block">
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/4aceh.jpeg')] rounded-xl bg-auto">
+            </div>
+            <div class="text-white">Aceh</div>
+          </div>
+
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/5solo.jpeg')] rounded-xl bg-auto">
+            </div>
+            <div class="text-white">Solo</div>
+          </div>
+
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/6yogyakarta.jpeg')] rounded-xl bg-auto">
+            </div>
+            <div class="text-white">Yogyakarta</div>
+          </div>
+
+          <div class="flex flex-col text-center gap-4">
+            <div
+              class="w-[230px] h-[140px] rounded-15 bg-cover bg-[url('./asset/png/city/7semarang.jpg')] rounded-xl bg-auto">
+            </div>
+            <div class="text-white">Semarang</div>
+          </div>
+
+        </div>
+        <div class="mt-10 rounded-[10px] h-[40px] w-[255px] bg-white flex justify-center  ">
+          <button class="text-[#3366FF] text-center ">See All</button>
+        </div>
+      </div>
+
+      <!-- dekstop -->
+      <div class="md:hidden">
+        <div class="bg-white md:bg-[#F1F1F1] w-full flex flex-col items-center py-[50px] overflow-hidden w-[90%]">
+          <div class="flex flex-col justify-center">
+            <button class="btn-category">
+              <div class="flex gap-4 pl-3 tracking-[3px]"><img src="./asset/png/Line .png" alt="line">
+                <div>CATEGORY</div>
+              </div>
+            </button>
+          </div>
+          <div class="font-semibold text-4xl mt-6 tracking-[1px]">Browse Events</div>
+          <div class="font-semibold text-4xl mt-6 tracking-[1px]">By Category</div>
+          <div class="flex mt-12">
+            <ul class="flex gap-4 text-[#C1C5D0] ">
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Music</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Arts</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Outdoors</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Workshop</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Sport</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Festival</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Fashion</li>
+              </a>
+
+            </ul>
+          </div>
+
+          <!-- contoh -->
+          <div class="baner-category">
+            <div class="btn-arrow">
+              <div>
+                <button class="arrow-left"> &larr;</button>
+              </div>
+
+            </div>
+
+
+            <div class="baner-bottom">
+              <div class="baner-c1">
+
+              </div>
+              <div class="baner-b">
+                <div class="title-baner-1">
+                  <div class="profile-guest-1">
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+
+                  <div class="text1">Wed, 15 Nov, 4:00 PM</div>
+                  <div>See it in Gold Class </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="btn-arrow">
+              <div>
+                <button class="arrow-left"> &rarr;</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dekstop2 -->
+
+      <div class="hidden md:block">
+        <div class="bg-[#F1F1F1] w-full flex flex-col items-center pb-[50px]">
+          <div class="flex flex-col justify-center">
+            <button class="btn-category">
+              <div class="flex gap-4 pl-3 tracking-[3px]"><img src="./asset/png/Line .png" alt="line">
+                <div>CATEGORY</div>
+              </div>
+            </button>
+          </div>
+          <div class="font-semibold text-4xl mt-6 tracking-[1px]">Browse Events By Category</div>
+          <div class="flex mt-12">
+            <ul class="flex gap-x-24 text-[#C1C5D0] ">
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Music</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Arts</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Outdoors</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Workshop</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Sport</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Festival</li>
+              </a>
+              <a href="">
+                <li class="hover:text-[#3366FF] hover:border-b-4 hover:border-indigo-500">Fashion</li>
+              </a>
+            </ul>
+          </div>
+
+          <!-- contoh -->
+          <div class="baner-category">
+            <div class="btn-arrow">
+              <div>
+                <button class="arrow-left"> &larr;</button>
+              </div>
+
+            </div>
+            <div class="baner-bottom">
+              <div class="baner-a1">
+
+              </div>
+              <div class="baner-b">
+                <div class="title-baner-1">
+                  <div class="profile-guest-1">
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+
+                  <div class="text1">Thu, 16 Nov, 7:00 PM</div>
+                  <div>See it in Gold Class </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="baner-bottom">
+              <div class="baner-b1">
+
+              </div>
+              <div class="baner-b">
+                <div class="title-baner-1">
+                  <div class="profile-guest-1">
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+
+                  <div class="text1">Wed, 15 Nov, 4:00 PM</div>
+                  <div>See it in Gold Class </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="baner-bottom">
+              <div class="baner-c1">
+
+              </div>
+              <div class="baner-b">
+                <div class="title-baner-1">
+                  <div class="profile-guest-1">
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile1">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p1.jpeg" alt="profile2">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p3.jpg" alt="profile3">
+                    </div>
+                    <div class="guest1">
+                      <img src="./asset/png/p4.jpg" alt="profile4">
+                    </div>
+                  </div>
+
+                  <div class="text1">Wed, 15 Nov, 4:00 PM</div>
+                  <div>See it in Gold Class </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="btn-arrow">
+              <div>
+                <button class="arrow-left"> &rarr;</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content6 py-[50px]">
+
+        <div class="flex flex-col items-center gap-10">
+          <div class="flex items-center gap-4 flex-col mt-10">
+            <button class="btn-partner">
+              <div class="flex gap-4 pl-3 tracking-[3px]"><img src="./asset/png/Line5.png" alt="line">
+                <div class="text-[#ffff]">PARTNER</div>
+              </div>
+            </button>
+            <div class="font-semibold md:text-4xl text-2xl mt-6 tracking-[1px] text-[#ffff]">Our Trusted Partners</div>
+            <div class=" text-[12px] mt-6 tracking-[0.5px] text-[#C1C5D0]">By companies like :</div>
+          </div>
+
+          <div class="md:flex md:flex-row md:gap-10 flex flex-col gap-16">
+
+            <div class="flex gap-16 ">
+              <div>
+                <img src="./asset/png/Sponsor1.png" alt="">
+              </div>
+              <div>
+                <img src="./asset/png/Sponsor5.png" alt="">
+              </div>
+            </div>
+            <div class="flex gap-16">
+              <div>
+                <img src="./asset/png/Sponsor3.png" alt="">
+              </div>
+              <div>
+                <img src="./asset/png/Sponsor4.png" alt="">
+              </div>
+            </div>
+            <div class="flex gap-16">
+              <div>
+                <img src="./asset/png/Sponsor5.png" alt="">
+              </div>
+              <div>
+                <img src="./asset/png/Sponsor3.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </main>
+    <footer class="flex flex-col pl-12 md:bg-[#F1F1F1] items-center">
+      <div class="w-[80%] py-[50px]">
+        <div class="section-top flex flex-col md:flex-row gap-[10px] justify-between">
+          <div class="flex flex-col gap-4 md:gap-[0px]">
+            <div>
+              <img src="./asset/png/nav-logo.png" alt="logo" />
+            </div>
+            <div>Find events you love with our</div>
+            <div class="flex md:gap-[10px] gap-4">
+              <div>
+                <img src="./asset/png/facebook.png" alt="icon-facebook" />
+              </div>
+              <div>
+                <img src="./asset/png/whatsapp.png" alt="icon-whatsapp" />
+              </div>
+              <div>
+                <img src="./asset/png/ig.png" alt="icon-instagram" />
+              </div>
+              <div>
+                <img src="./asset/png/twitter.png" alt="icon twitter" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Weatik
+            </div>
+
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              About Us
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Features
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Blog
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Payments
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Mobile App
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Features
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Booking
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Create Event
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Discover
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Register
+            </div>
+            <div></div>
+          </div>
+          <div class="flex flex-col md:gap-[0px]  gap-2 md:mt-[0px ] mt-[20px]">
+            <div class="text-[#373A42] font-semibold text-base cursor-pointer hover:text-[#0E8388]">
+              Company
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Partnership
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Help
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Terms of Service
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Privacy Policy
+            </div>
+            <div class="text-[#C1C5D0] hover:text-[#0E8388] cursor-default">
+              Sitemap
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-start mt-10">
+          <div class="copyright">© 2020 Wetick All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="action.js"></script>
+</body>
+
+</html>

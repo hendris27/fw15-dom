@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>login</title>
+</head>
+
+<body>
+    <div>
+        <div class="flex w-full h-full">
+            <aside class="hidden  md:block bg-[#0E8388] md:w-[68%] md:justify-center md:items-center md:flex">
+                <div class="">
+                    <img class="w-[450px] h-[350px]" src="./asset/png/logo-avatar.png" alt="logo" />
+                </div>
+            </aside>
+            <div class="flex flex-col md:items-center justify-center flex-1  w-[100%] p-[50px]">
+                <div>
+                    <div class="flex flex-col gap-4 md:w-full md:px-[0px] px-[10px]">
+                        <div class="flex gap-4  ">
+                            <img class="w-[47.5px] h-[50px] " src="./asset/svg/logo.svg" alt="title-login-logo">
+                            <span class="font-bold mt-[10px]">We<span style="color:#FF3D71">tick</span>
+                            </span>
+                        </div>
+
+
+                        <div class="flex flex-col">
+                            <label class="font-bold text-xl">Sign in</label></br></br>
+                        </div>
+                        <div>
+                            <form id="form" class="flex  flex-col px-[0px]">
+                                <div class="flex flex-col gap-4">
+                                    <div class="">
+                                        <label class="mt-[20px]">Hi, Welcome back to Urticket! </label>
+                                        <Input id="inputName" name="inputName"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="text" placeholder="Username" />
+                                        <div id="resultName" class="text-[10px]"></div>
+                                    </div>
+
+                                    <div>
+                                        <Input id="inputEmail" name="inputEmail"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="email" placeholder="Email" />
+                                        <div class="text-[10px] text-red-400" id="resultEmail"></div>
+                                    </div>
+                                    <div>
+                                        <Input id="inputPass" name="inputPass"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="password" placeholder="Password" />
+                                        <label id="resultPass" class="text-[10px] text-red-400 "></label>
+                                        <label class=" flex justify-end">
+                                            <a href="Forgot-password.html" class="f-password">Forgot
+                                                Password?</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="submit"
+                                        class="w-full h-[55px] border-box border-[1px] rounded-xl outline-none  font-semibold text-xl bg-[#0E8388]">
+                                        Sign in</button>
+                                </div>
+                                <div class="text-[15px] text-green-400" id="loginsucces"></div>
+                                <div class="flex items-center justify-center">
+                                    <span class="sign-with">or sign with</span>
+                                </div>
+                                <div class="flex gap-3 justify-center">
+                                    <div class="icon-google">
+                                        <img src="./asset/svg/btnGoogle.svg" alt="icon-google">
+                                    </div>
+                                    <div class="icon-facebook">
+                                        <img src="./asset/svg/btnFacebook.svg" alt="icon-facebook">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="action.js"></script>
+</body>
+
+</html>
