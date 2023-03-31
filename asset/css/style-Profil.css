@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F1F1;
+    height: 100vh;
+
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E8388;
+    position: fixed;
+
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+ul .list-menu {
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+
+}
+
+ul .list-menu:hover {
+    color: #F1F1F1;
+    border-bottom-color: rgb(92, 22, 65);
+}
+
+.profil {
+    display: flex;
+}
+
+.username {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/* batas style header */
+
+
+/* style main */
+.main {
+    display: flex;
+    background-color: #F1F1F1;
+    justify-content: space-between;
+
+
+}
+
+main .side-content {
+    margin-top: 150px;
+    width: 30%;
+    height: 800px;
+    flex: 1;
+}
+
+
+main .main-content {
+    background-color: #fffF;
+    width: 70%;
+    height: 926px;
+    margin-top: 150px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    gap: 0px;
+}
+
+/* // styling page profil-mybooking */
+.t-book {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+}
+
+/* end styling page profil-mybooking */
+
+main .main-content .section-form {
+    height: 600px;
+    width: 700px;
+}
+
+.sub-title {
+    font-size: 24px;
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+
+.title-login-text {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.sub-title-detail {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.input {
+    width: 415px;
+    height: 55px;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 0 20px;
+    outline: none;
+    border: 1px solid #C1C5D0;
+    box-sizing: border-box;
+
+}
+
+.input[type=password] {
+    width: 415px;
+    height: 55px;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 0 20px;
+    outline: none;
+    border: 1px solid #C1C5D0;
+    box-sizing: border-box;
+
+}
+
+input::placeholder {
+    color: #C1C5D0;
+}
+
+.btn-login {
+    background-color: #0E8388;
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    align-self: center;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.3);
+    margin-top: 75px;
+    margin-right: 100px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.title-sub-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+
+.title-sub-login .label-text {
+    margin-top: 30px;
+}
+
+/* styling footer */
+.footer {
+    background-color: #F1F1F1;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+footer>.section-top {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: #F1F1F1;
+
+}
+
+.section-top .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+div .other-title {
+    color: #373A42;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: default;
+    margin-left: 30px;
+}
+
+div .other-title:hover {
+    text-shadow: 0px 8px 10px rgba(9, 236, 236, 0.3);
+    color: #1e50db;
+}
+
+.other-title~div {
+    color: #C1C5D0;
+    cursor: default;
+    margin-left: 30px;
+}
+
+.other-title~div:hover {
+    color: #373A42;
+}
+
+.section-bottom {
+    display: flex;
+    width: 100%;
+    background-color: #F1F1F1;
+    padding-top: 100px;
+    flex: 1;
+
+}
+
+.section-bottom .copyright {
+    margin-left: 12%;
+    height: 40px;
+    font-weight: 600;
+    color: #5A7184;
+    font-size: 16px;
+    justify-content: center;
+    background-color: #F1F1F1;
+    flex: 1;
+}
+
+.p-margin {
+    margin-inline-end: 100px;
+}
