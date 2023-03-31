@@ -1,17 +1,67 @@
-const formLogin=document.getElementById('form')
-const loginSucces=document.getElementById('loginsucces')
-const resultName=document.getElementById('resultName')
-const resultEmail=document.getElementById('resultEmail')
-const resultPass=document.getElementById('resultPass')
+// Function validate name
+const resultName = document.getElementById('resultName')
+const inputName = document.getElementById('inputName')
+const resultEmail = document.getElementById('resultEmail')
+const inputEmail = document.getElementById('inputEmail')
+const formLogin = document.getElementById('form')
 
-resultName.addEventListener('keyup', function(event){
+inputName.addEventListener('keyup', function(event){
   event.preventDefault()
-  const name =event.target.inputName.value
-  
-  if(name === ""){
-
+  const name =event.target.value
+  if (Number(name) || name === ''){
+    resultName.classList.remove('hidden')
+  } else {
+    if( typeof name === 'string'){
+      resultName.classList.add('hidden')
+    }
+    else {
+      resultName.classList.add ('hidden')
+    }
   }
+})
 
+// Function validate Email
+inputEmail.addEventListener('keyup', function(event){
+  event.preventDefault()
+  const email =event.target.value
+  if (email !== "hendri@gmail.com" || email === '' ){
+    resultEmail.classList.remove('hidden')
+    
+  } else {
+    if(email === "hendri@gmail.com"){
+      resultEmail.classList.add('hidden')
+    }else{
+      resultEmail.classList.add('hidden')
+    }
+  }
+})
+
+
+// Function validate Password
+const resultPass=document.getElementById('resultPass')
+const inputPass=document.getElementById('inputPass')
+inputPass.addEventListener('keyup', function(event){
+  event.preventDefault()
+  const Pass =event.target.value
+  if (Pass !== "1234" || Pass === '' ){
+    resultPass.classList.remove('hidden')
+    
+  } else {
+    if(Pass === "1234"){
+      resultPass.classList.add('hidden')
+    }else{
+      resultPass.classList.add('hidden')
+    }
+  }
+})
+
+formLogin.addEventListener('submit', function(event){
+  event.preventDefault()
+  const name = event.target.inputName.value
+  const email = event.target.inputEmail.value
+  const pass = event.target.inputPass.value
+  if(name === "hendri" && email === "hendri@gmail.com" && pass === "1234")
+  window.location="./index.html"
 })
 
 
