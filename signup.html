@@ -29,53 +29,73 @@
 
 
                         <div class="flex flex-col">
-                            <label class="font-bold text-xl">Sign up</label></br></br>
+                            <label class="font-bold text-xl">Sign up</label>
                             <div>
                                 <label>Already have an account? <a href="login.html"
                                         style="color: blue; text-decoration: none;">Log in</a> </label>
                             </div>
                         </div>
                         <div>
-                            <form class="flex  flex-col px-[0px]">
+                            <form id="form" class="flex  flex-col py-[30px]">
                                 <div class="flex flex-col gap-4">
                                     <div>
-                                        <Input
-                                            class="w-full px-[20px] border-[3px]  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
-                                            type="email" placeholder="Username" />
+                                        <div id="resultError" name="resultError"
+                                            class="hidden text-black text-[10px] font-thin text-center border border-[2px] rounded-xl mb-[5px] bg-red-400">
+                                            terjadi kesalahan!!
+                                        </div>
+                                        <Input id="inputName" name="inputName"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="text" placeholder="Username" />
+                                        <div id="resultName" class="text-[10px] hidden text-red-400">name wrong, try
+                                            again!!!
+                                        </div>
                                     </div>
 
                                     <div>
-                                        <Input
-                                            class="w-full px-[20px] border-[3px]  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                        <Input id="inputEmail" name="inputEmail"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
                                             type="email" placeholder="Email" />
+                                        <div class="text-[10px] text-red-400" id="resultEmail">name wrong, try
+                                            again!!!</div>
                                     </div>
+                                </div>
+                                <div>
                                     <div>
-                                        <div>
-                                            <Input
-                                                class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
-                                                type="password" placeholder="Password" />
-                                        </div>
-
+                                        <Input id="inputPass" name="inputPass"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="password" placeholder="Password" />
+                                        <label id="resultPass" class="text-[10px] text-red-400 ">Password
+                                            Wrong!!</label>
                                     </div>
 
+                                </div>
+
+                                <div>
                                     <div>
-                                        <div>
-                                            <Input
-                                                class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
-                                                type="password" placeholder="Confirm Password" />
-                                        </div>
-
+                                        <Input id="inputCPass" name="inputCPass"
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="password" placeholder="Confirm Password" />
+                                        <label id="resultCPass" class="text-[10px] text-red-400 ">Password
+                                            Wrong!!</label>
                                     </div>
 
-                                    <div class="Accept"> <label>
-                                            <input type="checkbox" /> &nbsp; Accept terms and condition
-                                        </label>
+                                </div>
 
-                                    </div>
-                                    <div>
-                                        <button
-                                            class="w-full h-[55px] border-box border-[1px] rounded-xl outline-none  font-semibold text-xl bg-[#0E8388]">
-                                            Sign up</button>
+
+                                <div class="flex items-center mt-[20px] ">
+                                    <input id="link-checkbox" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="link-checkbox"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                        I agree with the terms an conditions <a href="#"
+                                            class="text-blue-600 dark:text-blue-500 hover:underline"></a>.</label>
+                                </div>
+
+                                <div class="mt-[10px]">
+                                    <button type="submit"
+                                        class="w-full h-[55px] border-box border-[1px] rounded-xl outline-none  font-semibold text-xl bg-[#0E8388]">
+                                        Sign up</button>
+                                </div>
 
 
                             </form>
@@ -85,6 +105,7 @@
             </div>
         </div>
     </div>
+    <script src="./action.js"></script>
 </body>
 
 </html>

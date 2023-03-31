@@ -24,7 +24,7 @@ inputName.addEventListener('keyup', function(event){
 inputEmail.addEventListener('keyup', function(event){
   event.preventDefault()
   const email =event.target.value
-  if (email !== "hendri@gmail.com" || email === '' ){
+  if (!email.includes('@') || email === ''){
     resultEmail.classList.remove('hidden')
     
   } else {
@@ -43,7 +43,7 @@ const inputPass=document.getElementById('inputPass')
 inputPass.addEventListener('keyup', function(event){
   event.preventDefault()
   const Pass =event.target.value
-  if (Pass !== "1234" || Pass === '' ){
+  if (Pass.length < 7 || Pass === '' ){
     resultPass.classList.remove('hidden')
     
   } else {
@@ -55,13 +55,44 @@ inputPass.addEventListener('keyup', function(event){
   }
 })
 
+const resultCPass=document.getElementById('resultCPass')
+const inputCPass=document.getElementById('inputCPass')
+inputCPass.addEventListener('keyup', function(event){
+  event.preventDefault()
+  const CPass =event.target.value
+  if (CPass.length < 7 || CPass === '' ){
+    resultCPass.classList.remove('hidden')
+    
+  } else {
+    if(CPass === "1234"){
+      resultCPass.classList.add('hidden')
+    }else{
+      resultCPass.classList.add('hidden')
+    }
+  }
+})
+
+
+
 formLogin.addEventListener('submit', function(event){
   event.preventDefault()
   const name = event.target.inputName.value
   const email = event.target.inputEmail.value
   const pass = event.target.inputPass.value
-  if(name === "hendri" && email === "hendri@gmail.com" && pass === "1234")
-  window.location="./index.html"
+  const Cpass = event.target.inputCPass.value
+  const resultError =document.getElementById('resultError')
+  
+  if(name === "hendri" && email === "hendri@gmail.com" && pass === "1234" && Cpass === "1234"){
+    window.location="./index.html"
+  }else if(name !== "hendri"){
+    resultName.classList.remove('hidden')
+    resultError.classList.remove('hidden')
+  }else {
+    resultError.classList.remove('hidden')
+  }
+     
+  
+  
 })
 
 
