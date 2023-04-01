@@ -2,8 +2,10 @@
 const resultName = document.getElementById('resultName')
 const inputName = document.getElementById('inputName')
 const resultEmail = document.getElementById('resultEmail')
+const resultEmailfp = document.getElementById('resultEmailfp')
 const inputEmail = document.getElementById('inputEmail')
-const formLogin = document.getElementById('form')
+const inputEmailfp = document.getElementById('inputEmailfp')
+const formsignup = document.getElementById('formsignup')
 
 inputName.addEventListener('keyup', function(event){
   event.preventDefault()
@@ -24,11 +26,11 @@ inputName.addEventListener('keyup', function(event){
 inputEmail.addEventListener('keyup', function(event){
   event.preventDefault()
   const email =event.target.value
-  if (!email.includes('@') || email === ''){
+  if (!email.includes('@gmail.com') || email === ''){
     resultEmail.classList.remove('hidden')
-    
+    return true
   } else {
-    if(email === "hendri@gmail.com"){
+    if(email === 'string'){
       resultEmail.classList.add('hidden')
     }else{
       resultEmail.classList.add('hidden')
@@ -47,7 +49,7 @@ inputPass.addEventListener('keyup', function(event){
     resultPass.classList.remove('hidden')
     
   } else {
-    if(Pass === "1234"){
+    if(Pass === "12345678"){
       resultPass.classList.add('hidden')
     }else{
       resultPass.classList.add('hidden')
@@ -64,7 +66,7 @@ inputCPass.addEventListener('keyup', function(event){
     resultCPass.classList.remove('hidden')
     
   } else {
-    if(CPass === "1234"){
+    if(CPass === "12345678"){
       resultCPass.classList.add('hidden')
     }else{
       resultCPass.classList.add('hidden')
@@ -72,9 +74,8 @@ inputCPass.addEventListener('keyup', function(event){
   }
 })
 
-
-
-formLogin.addEventListener('submit', function(event){
+// validate submit signup
+formsignup.addEventListener('submit', function(event){
   event.preventDefault()
   const name = event.target.inputName.value
   const email = event.target.inputEmail.value
@@ -84,13 +85,22 @@ formLogin.addEventListener('submit', function(event){
   
   if(name === "hendri" && email === "hendri@gmail.com" && pass === "1234" && Cpass === "1234"){
     window.location="./index.html"
+    return false
   }else if(name !== "hendri"){
     resultName.classList.remove('hidden')
     resultError.classList.remove('hidden')
-  }else {
+    return false
+  }else if(email !== "hendri@gmail.com"){
+    resultEmail.classList.remove('hidden')
     resultError.classList.remove('hidden')
-  }
-     
+    return false
+  }else if(pass !== "12345678"){
+    resultPass.classList.remove('hidden')
+    resultError.classList.remove('hidden')
+  }else if(Cpass !== pass){
+    resultCPass.classList.remove('hidden')
+    resultError.classList.remove('hidden')
+  }return false
   
   
 })
@@ -105,32 +115,19 @@ function showToggle() {
       x.style.display = "none";
     }
   }
-// show data input
-// function showDatainput(){
-//     const Name=document.getElementById('inputName')
-//     if (Name === ""){
-//         Resultname.innerText='Data harus diisi!!!'
 
-//     }else{
-//         Resultname.innerText=Name
-//     }
-//     const Email=document.getElementById('inputEmail')
-//     const Pass=document.getElementById('inputPass')
-//     const Resultname=document.getElementById('resultName')
-//     const Resultemail=document.getElementById('resultEmail')
-//     const Resultpass=document.getElementById('resultPass')
-//     Resultname.innerText = Name.value;
-//     Resultemail.innerText = Email.value;
-//     Resultpass.innerText = Pass.value;
-// }
-function validasiEmail() {
-	var rs = document.forms["formpass"]["Email"].value;
-	var atps=rs.indexOf("@");
-	var dots=rs.lastIndexOf(".");
-	if (atps<1 || dots<atps+2 || dots+2>=rs.length) {
-		alert("Alamat email tidak valid.");
-		return false;
-	} else {
-		alert("Alamat email valid.");
-	}
-}
+  // valiadasi Change Passowrd
+  inputEmailfp.addEventListener('keyup', function(event){
+    event.preventDefault()
+    const Emailfp =event.target.value
+    if (Emailfp.includes('@gmail.com') ){
+      resultEmailfp.classList.remove('hidden')
+    } else {
+      if(Emailfp === "hendri@gmail.com"){
+        resultEmailfp.classList.add('hidden')
+      }else{
+        resultEmailfp.classList.add('hidden')
+      }
+    }
+  })
+  
