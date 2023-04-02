@@ -10,7 +10,7 @@
     <title>login</title>
 </head>
 
-<body>
+<body class="loginPage">
     <div>
         <div class="flex w-full h-full">
             <aside class="hidden  md:block bg-[#0E8388] md:w-[68%] md:justify-center md:items-center md:flex">
@@ -52,14 +52,14 @@
                                         <Input id="inputEmail" name="inputEmail"
                                             class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
                                             type="email" placeholder="Email" />
-                                        <div class="text-[10px] text-red-400" id="resultEmail">name wrong, try
+                                        <div class="hidden text-[10px] text-red-400" id="resultEmail">name wrong, try
                                             again!!!</div>
                                     </div>
                                     <div>
                                         <Input id="inputPass" name="inputPass"
                                             class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
                                             type="password" placeholder="Password" />
-                                        <label id="resultPass" class="text-[10px] text-red-400 ">Password
+                                        <label id="resultPass" class="hidden text-[10px] text-red-400 ">Password
                                             Wrong!!</label>
                                         <label class=" flex justify-end">
                                             <a href="Forgot-password.html" class="f-password">Forgot
@@ -93,7 +93,7 @@
             </div>
         </div>
     </div>
-    <script src="action-login.js"></script>
+    <script src="./asset/js/script.js"></script>
 </body>
 
 </html>

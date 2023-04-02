@@ -130,4 +130,39 @@ function showToggle() {
       }
     }
   })
-  
+
+  // // show data array     
+  //       const dataArray = [
+  //           {
+  //               title: "Sights & Sounds Exhibition",
+  //               dateTime: "Wed, 15 Nov, 4:00 PM",
+  //               image: '/asset/png/baner1.png'
+  //           },
+  //           {
+  //               title: "See it in Gold Class",
+  //               dateTime: "Thu, 16 Nov, 7:00 PM",
+  //               image: '/asset/png/baner1.png'
+  //           },
+  //           {
+  //             title: "One Piece RED",
+  //             dateTime: "Sun, 01 Dec, 4:00 PM",
+  //             image: '/asset/png/baner3.jpg'
+  //         }
+  //       ];
+
+  //       // Mencari elemen <div> dengan ID "data1"
+  //       const titleEvent = document.getElementById('tittleEvent');
+
+  //       // Menampilkan satu judul dan dateTime pada <div> pertama
+  //       const h2 = document.createElement('h2');
+  //       h2.style.fontSize = '54px'; // Mengatur ukuran font menjadi 24px
+  //       h2.textContent = `${dataArray[1].title}`;
+  //       titleEvent.appendChild(h2);
+
+  //       // // Mencari elemen <div> dengan ID "data2"
+  //       // const data2Div = document.getElementById('data2');
+
+  //       // // Menampilkan satu gambar pada <div> kedua
+  //       // const img = document.createElement('img');
+  //       // img.setAttribute('src', dataArray[0].image);
+  //       // data2Div.appendChild(img);
