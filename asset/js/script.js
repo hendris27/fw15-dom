@@ -83,7 +83,24 @@ if (loginPage) {
         }
     })
 }
+if (signUpPage) {
+    const ckBox = document.getElementById('ckBox').checked = false;
+    const btnSubmit = document.getElementById('btnSubmit').disabled = true;
+}
+if (signUpPage) {
+    const ckBox = document.getElementById('ckBox');
+    const btnSubmit = document.getElementById('btnSubmit');
 
+    ckBox.addEventListener('click', function () {
+        if (ckBox.checked === true) {
+            btnSubmit.disabled = false;
+            btnSubmit.className = 'shadow-for-all-button w-full h-14 rounded-xl  text-base font-semibold tracking-[1px] text-white bg-[#03C988]'
+        } else {
+            btnSubmit.disabled = true;
+            btnSubmit.className = 'shadow-for-all-button w-full h-14 rounded-xl  text-base font-semibold tracking-[1px] text-white bg-[#0E8388]'
+        }
+    })
+}
 if (signUpPage) {
     // Function validate name
     const resultName = document.getElementById('resultName')
@@ -169,7 +186,7 @@ if (signUpPage) {
         const Cpass = event.target.inputCPass.value
         const resultError = document.getElementById('resultError')
 
-        if (name === "hendri" && email === "hendri@gmail.com" && pass === "1234" && Cpass === "1234") {
+        if (name === "hendri" && email === "hendri@gmail.com" && pass === "12345678" && Cpass === "12345678") {
             window.location = "./index.html"
             return false
         } else if (name !== "hendri") {
@@ -255,6 +272,8 @@ if (signUpPage) {
     //       // data2Div.appendChild(img);
 
 }
+
+
 if (forgotPassword) {
     // Function validate name
     const resultEmailfp = document.getElementById('resultEmailfp')
