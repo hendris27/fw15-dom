@@ -69,7 +69,7 @@ if (loginPage) {
         const pass = event.target.inputPass.value
         const resultErrorlogin = document.getElementById('resultErrorlogin')
 
-        if (name === "hendri" && email === "hendri@gmail.com" && pass === "1234") {
+        if (name === "hendri" && email === "hendri@gmail.com" && pass === "12345678") {
             window.location = "./index.html"
         } else if (name !== "hendri") {
             resultName.classList.remove('hidden')
@@ -187,7 +187,7 @@ if (signUpPage) {
         const resultError = document.getElementById('resultError')
 
         if (name === "hendri" && email === "hendri@gmail.com" && pass === "12345678" && Cpass === "12345678") {
-            window.location = "./index.html"
+            window.location = "./login.html"
             return false
         } else if (name !== "hendri") {
             resultName.classList.remove('hidden')
@@ -234,7 +234,6 @@ if (signUpPage) {
             }
         }
     })
-
 
 }
 
